@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>"オブジェクト"</title>
+  </head>
+  <body>
+    <h1>オブジェクト</h1>
+    <script>
+      const hikakin = {
+        name: "ヒカキン",
+        age: 24,
+      }
+      console.log(hikakin.name)
+      console.log(hikakin["age"])
+      const numbersToString = {
+        0: "ぜろ",
+        1: "いち",
+        2: "に",
+      }
+      console.log(numbersToString[0])
+      const hikakina = {
+        name: "ヒカキン",
+        age: 24,
+        sayHello: function () {
+          console.log("ブンブンハロー YouTube")
+        },
+      }
+      console.log(hikakina.sayHello())
+      console.dir(document)
+      console.dir(window)
+      const karappo = ["おかし"]
+      console.log(karappo) // => []
+      const toyaBijutsu = 1
+      const ryotaBijutsu = 3
+      const yasunariBijutsu = 5
+
+      const bijutsuSeiseki = [toyaBijutsu, ryotaBijutsu, yasunariBijutsu]
+      console.log(bijutsuSeiseki) // => [ 1, 3, 5 ]
+      const seisekibo = [
+        { name: "とーや", taiiku: 1, bijutsu: 5, doutoku: 5 },
+        { name: "りょーた", taiiku: 3, bijutsu: 3, doutoku: 3 },
+        { name: "やすなり", taiiku: 5, bijutsu: 5, doutoku: 1 },
+      ]
+      const undoudekiruSeito = [taiiku.]
+
+      console.log(seisekibo[0]) // => { name: "とーや", taiiku: 1, bijutsu: 5, doutoku: 5 }
+      console.log(seisekibo[0].name) // => "とーや"
+      seisekibo[0] = { name: "ひかきん", taiiku: 5, bijutu: 5, doutoku: 5 }
+      console.log(seisekibo[0]) // => { name : 'ひかきん', taiiku: 5, bijutu: 5, doutoku: 5 }
+      const aisatsu = ["おはよう", "こんにちは"]
+
+      aisatsu.push("こんばんは")
+
+      console.log(aisatsu)
+    </script>
+  </body>
+</html>

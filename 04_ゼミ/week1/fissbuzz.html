@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const fizzBuzz = function (number) {
+        console.log(fizzBuzz)
+
+        for (let n = 0; n <= number; n++) {
+          if (n % 15 === 0) {
+            console.log("fissBuzz")
+          } else if (n % 3 === 0) {
+            console.log("Fizz")
+          } else if (n % 5 === 0) {
+            console.log("Bazz")
+          } else {
+            console.log(n)
+          }
+        }
+      }
+
+      //for文の後は、中かっこが必要
+      fizzBuzz(100)
+      //関数の外側から呼び出す（中かっこの外
+      console.log(fizzBuzz)
+    </script>
+  </body>
+</html>

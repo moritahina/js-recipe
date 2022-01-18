@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Week１わけわからん！</title>
+  </head>
+  <body>
+    <script>
+      console.log(5 + 2)
+
+      let x = 5
+      x += 2
+      x *= 5
+      x = 100 % x
+      x /= 6
+      console.log(x)
+      const isHapy = true
+      const isSleepy = true
+      console.log(isHapy && isSleepy)
+      console.log("isHappy")
+      const plus = function (x, y) {
+        return x + y
+      }
+      console.log(plus)
+      console.log(plus(11, 31))
+
+      const wakariyasui = function (a) {
+        const maru = a ** 2 * Math.PI
+        const sankaku = (a ** 2 * Math.sqrt(3)) / 4
+        const shikaku = a ** 2
+        return maru + sankaku + shikaku
+      }
+      console.log(wakariyasui)
+      console.log((a = 2))
+      alert("Hello!")
+      const alertTime = function () {
+        alert(new Date().toLocaleString())
+      }
+      let count = 0
+      const countUp = function () {
+        count += 1
+      }
+
+      countUp()
+      console.log(count) // 1
+
+      countUp()
+      countUp()
+      console.log(count) //
+      alertTime()
+
+      const sayHelloTo = function () {
+        alert("Hello, " + "ひな" + "!")
+      }
+
+      sayHelloTo("guys")
+    </script>
+  </body>
+</html>

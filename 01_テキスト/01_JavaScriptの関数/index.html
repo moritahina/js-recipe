@@ -9,6 +9,15 @@
   <body>
     <h1>JavaScriptの関数</h1>
 
-    <script src="main.js"></script>
+    <script src="main.js">
+             const display = document.getElementById("display")
+          const button = document.getElementById("button")
+          button.onclick = function() {
+            const sayHelloTo = function (name) {
+        alert("Hello, " + name + "!")
+      }
+
+      sayHelloTo("guys")
+    </script>
   </body>
 </html>
