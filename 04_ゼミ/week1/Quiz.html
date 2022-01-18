@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>WebExpertコーステンプレート</title>
+  </head>
+  <body>
+    <h1>富山弁クイズ</h1>
+    <p>第一問！きときとの意味は何でしょう</p>
+    <button id="bisyo-buttonId">①びしょびしょ</button>
+    <button id="iki-buttonId">②いきいき</button>
+    <button id="oishi-buttonId">③おいしい</button>
+    <div id="kotaeId">答えは何かな……?</div>
+    <script>
+      // JavaScirptの準備
+      const bisyoButton = document.getElementById("bisyo-buttonId")
+      const ikiikiButton = document.getElementById("iki-buttonId")
+      const oishiiButton = document.getElementById("oishi-buttonId")
+      const kotae = document.getElementById("kotaeId")
+
+      // ボタンをクリックしたら，kotaeの要素を変化させる
+      bisyoButton.onclick = function () {
+        // kotaeの中身を変更する
+        kotae.textContent = "正解は②のいきいきでした！"
+      }
+      ikiikiButton.onclick = function () {
+        kotae.textContent = "正解！！あなたは富山県民ですか！？"
+      }
+      oishiiButton.onclick = function () {
+        kotae.textContent = "ぶぶー"
+      }
+    </script>
+  </body>
+</html>
