@@ -8,3 +8,15 @@ fetch("https://dog.ceo/api/breeds/image/random")
   .then((data) => {
     imageElement.src = data.message // 画像を表示する
   })
+  const charactor={
+    mane:"ぴよぴよ"
+    mother: {
+            name:　"ちゅんちゅん"
+            color:　"茶色"}
+      hobbies:["人助け","食べること","飛ぶこと"]
+  }
+ console.log(charactor.mother.name)
+console.log(charactor.hobbies[0])
+
+sayHello: function() {
+    console.log("ブンブンハロー YouTube")}

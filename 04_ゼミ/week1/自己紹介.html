@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>JavaScriptの様々なデータの値</h1>
+    <script>
+      // Number 型
+      console.log(1 + 1)
+
+      // 文字列型
+      console.log("1" + "1")
+
+      // Boolean型 真偽値
+      // true
+      // false
+      const sanNoBaisu = 9 % 3 === 0 // 演算子はbooleanに変換される
+      const sanNoBaisu2 = 10 % 3 === 0
+      console.log(sanNoBaisu) // => true
+      console.log(sanNoBaisu2) // => false
+
+      // 変数の話
+      // const name = "ふー"
+      // const age = 18
+      // console.log("ぼくの名前は" + name)
+      // console.log("年齢は" + age)
+
+      // オブジェクト
+      const junsei = {
+        name: "ふー", // キー と バリュー 合わせて プロパティ
+        age: 24,
+        isMentor: true,
+        hobbies: ["🏂", "バイク", "楽器"],
+        familiy: {
+          papa: "ほげ",
+          mama: "ふが",
+        },
+        hello: function () {
+          console.log("よろしくお願いします。")
+        },
+      }
+
+      console.log(junsei)
+
+      // 使うには、オブジェクト.キー を使う
+      console.log(`僕の名前は${junsei.name}です`) // => 'ふー'
+      console.log(`年齢は${junsei.age}です`) // => 24
+      console.log(`0番目の趣味は${junsei.hobbies[0]}です`) // => 24
+
+      junsei.hello()
+      const charactor = {
+        name: "ぴよぴよ",
+        age: 0.1,
+        hobbies: ["さえずり", "食べること", "飛ぶこと"],
+        mother: {
+          name: "ちゅんちゅん",
+          age: 2,
+        },
+      }
+      console.log(charactor)
+      console.log(charactor.mother.name)
+      console.log(charactor.hobbies[0])
+    </script>
+  </body>
+</html>

@@ -11,3 +11,9 @@ git add .
 git commit -m "わからないけど、面白いと感じたい"
 git push origin master
 ```
+
+```bash
+git add .
+git commit -m "あ～～～え～～～"
+git push origin master
+```
