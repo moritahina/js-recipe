@@ -10,5 +10,11 @@
   .rounded {
     border-radius: 50px;
   }
+  .tetora{
+     width:3px;
+     height: 100px;
+     background-color: black;
+  }
     □ square = square
-    ○ circle = square + rounded
+    ○ circle = square + rounded 
+    △tetora = tetora

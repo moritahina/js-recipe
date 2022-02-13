@@ -7,6 +7,8 @@ addButton.onclick = function () {
   // カードを作成する
   const card = createCard(inputElement.value)
   container.append(card)
+  const inputnakami = inputElement.value
+  console.log(inputnakami)
 
   // 入力欄を空にする
   inputElement.value = ""
